@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Pulse - Premium Workout Tracker</title>
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header / Streak Section -->
+        <header class="glass-header">
+            <div class="logo">
+                <i class="fa-solid fa-dumbbell"></i> <span>Gym Pulse</span>
+            </div>
+            <div class="streak-container">
+                <i class="fa-solid fa-fire flame-icon"></i>
+                <span id="streak-count">0</span> Day Streak
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Dynamic Content Loaded Here via JS -->
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="glass-nav">
+            <button class="nav-btn active" data-view="categories">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Workout</span>
+            </button>
+            <button class="nav-btn" data-view="history">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>History</span>
+            </button>
+            <button class="nav-btn" data-view="profile">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
